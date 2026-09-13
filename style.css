@@ -1,33 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Verdana, Arial, sans-serif;
   background-color: #f2e8d5;
   margin: 0;
   padding: 0;
+  color: #1e2761;
 }
+
+/* ==== Navigacija ==== */
 
 header {
   background-color: #1e2761;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+}
+
+.logo {
   color: white;
-  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #7a3b5e;
+}
+
+/* ==== Hero sekcija ==== */
+
+.hero {
+  background-image: linear-gradient(135deg, #1e2761, #7a3b5e);
+  background-size: cover;
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-sadrzaj h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-sadrzaj p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.istaknuto {
+  color: #f2e8d5;
+  font-weight: bold;
+}
+
+.gumb {
+  display: inline-block;
+  background-color: #7a3b5e;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gumb:hover {
+  background-color: #602e4a;
+}
+
+/* ==== O meni ==== */
+
+.o-meni {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
-.predstavljanje {
-  margin: 30px;
+.o-meni-sadrzaj {
+  margin-top: 20px;
   padding: 20px;
   border: 2px solid #1e2761;
   border-radius: 8px;
   background-color: white;
 }
 
-.istaknuto {
-  color: #7a3b5e;
-  font-weight: bold;
+/* ==== Kontakt ==== */
+
+.kontakt {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
 }
+
+.kontakt-forma {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #1e2761;
+  border-radius: 8px;
+  background-color: white;
+  text-align: left;
+}
+
+.kontakt-forma label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.kontakt-forma input,
+.kontakt-forma textarea {
+  padding: 10px;
+  border: 1px solid #1e2761;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.kontakt-forma .gumb {
+  margin-top: 16px;
+  align-self: center;
+}
+
+/* ==== Podnožje ==== */
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 16px;
   background-color: #1e2761;
   color: white;
   margin-top: 30px;

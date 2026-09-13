@@ -2,19 +2,53 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moja osobna stranica</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Dobrodošli na moju stranicu!</h1>
+    <nav>
+      <div class="logo">Moje Ime</div>
+      <ul class="nav-links">
+        <li><a href="#pocetna">Početna</a></li>
+        <li><a href="#o-meni">O meni</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="predstavljanje">
-    <p>Bok! Ja sam <span class="istaknuto">učenik/ica 3.b razreda</span> i ovo je moja prva web stranica.</p>
-    <p>Ovdje ću predstaviti sebe, svoje interese i hobije.</p>
-  </div>
+  <section id="pocetna" class="hero">
+    <div class="hero-sadrzaj">
+      <h1>Bok, ja sam <span class="istaknuto">Ime Prezime</span>!</h1>
+      <p>Učenik/ica 3.b razreda — ovo je moja prva web stranica.</p>
+      <a href="#o-meni" class="gumb">Saznaj više</a>
+    </div>
+  </section>
+
+  <section id="o-meni" class="o-meni">
+    <h2>O meni</h2>
+    <div class="o-meni-sadrzaj">
+      <p>Ovdje napišite nekoliko rečenica o sebi: tko ste, koje su vaše interese i hobije, i što planirate u budućnosti.</p>
+    </div>
+  </section>
+
+  <section id="kontakt" class="kontakt">
+    <h2>Kontakt</h2>
+    <form class="kontakt-forma">
+      <label for="ime">Ime i prezime</label>
+      <input type="text" id="ime" name="ime" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="poruka">Poruka</label>
+      <textarea id="poruka" name="poruka" rows="5" required></textarea>
+
+      <button type="submit" class="gumb">Pošalji</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2026. Moja osobna stranica</p>
