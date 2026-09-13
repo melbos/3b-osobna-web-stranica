@@ -40,14 +40,20 @@
   <section id="kontakt" class="kontakt">
     <h2>Kontakt</h2>
     <form class="kontakt-forma">
-      <label for="ime">Ime i prezime</label>
-      <input type="text" id="ime" name="ime" required>
+      <div class="polje">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime" placeholder="Unesi svoje ime" required>
+      </div>
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
+      <div class="polje">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="ime@email.com" required>
+      </div>
 
-      <label for="poruka">Poruka</label>
-      <textarea id="poruka" name="poruka" rows="5" required></textarea>
+      <div class="polje">
+        <label for="poruka">Poruka</label>
+        <textarea id="poruka" name="poruka" rows="5" placeholder="Napiši svoju poruku..." required></textarea>
+      </div>
 
       <button type="submit" class="gumb">Pošalji</button>
     </form>
