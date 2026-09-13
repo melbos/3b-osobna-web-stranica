@@ -10,4 +10,4 @@ Sadrži početni predložak (`index.html` + `style.css`) koji povezuje CSS s HTM
 
 ## Napomena
 
-Za objavu na GitHub Pages repozitorij mora biti **javan** (privatni repozitoriji zahtijevaju plaćeni GitHub plan za Pages).
+Za objavu na GitHub Pages repozitorij mora biti **javan**
